@@ -106,6 +106,7 @@ def ratings_in_db():
         db.delete(user)
     db.commit()
 
+    print("\nInserção de dados nas tabelas: Movies, Users, Ratings (~3min)")
     with open("app/cache/usermovie2rating_test.json", "rb") as f:
         usermovie2rating_test = pickle.load(f)
 
